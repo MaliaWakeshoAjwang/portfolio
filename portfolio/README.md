@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Steps
+1. Define Your Goals
+2. Decide the Structure
+3. Choose the Technology Stack
+4. Design the Layout
+5. Develop the Website
+6. Add Your Content
+7. Test and Deploy
 
-## Available Scripts
+## Define Your Goals
+I want this portfolio to showcase programming progects and my full-stack engineering skills. It should highlight projects, tasks, webistes, and jobs that I have done related to software engineering.
+My target audience is potential clients.
 
-In the project directory, you can run:
+## Define the Structure
+My portfolio will include the following pages:
+1. Home/Landing Page
+    - Catchy headline
+    - Brief introduction or tageline
+    - A CTA button leading to your work or resume.
+2. About Page
+    - A short bio
+    - Your skills and expertise
+    - A professional photo
+3. Portfolio/Projects
+    - Showcase your work with descriptions, links or case studies.
+    - Use visuals or demos where applicable.
+3. Blog
+    - Share insights, tutorials, or thoughts related to your field.
+4. Contact Page
+    - A contact form
+    - Links to email and social profiles (e.g., LinkedIn, GitHub, Twitter)
 
-### `npm start`
+## Choose the Technology Stack
+- Frontend: I am using Reach.js for the frontend.
+- Styling: I am using plain CSS for the styling.
+- Hosting: I am using Github pages for the hosting.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Design the Layout
+### Tools
+Will do the desigin on Figma and use the prototyping tool to test new featuers and see the layout of the page before building the live page.
+### Desing Tips
+1. Consistency
+    - Use a consistent color palette and typography.
+    - Choose clean modern fonts (e.g., Google Fonts).
+2. Navigation
+    - Simple and inuitive menu bar.
+    - Fixed navbar for better UX.
+3. Responsive Design
+    - Ensure it looks great on desktops, tablets, and phones.
+    - Use CSS Flexbox/Grid for layouts.
+4. Focus on Your Work
+    - Use large visuals for project showcases.
+    - Keep text concise and to the point.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Develop the Website
+### File Structure
+// TODO: create separate stylings for each page and the different components
+portfolio/
+├── public/
+│   ├── index.html
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   ├── Footer.js
+│   │   └── Header.js
+│   ├── pages/
+│   │   ├── About.js
+│   │   ├── Contact.js
+│   │   ├── Home.js
+│   │   └── Projects.js
+│   ├── styles/
+│   │   └── styles.css
+│   ├── App.js
+│   ├── index.js
+├── package-lock.json
+├── package.json
+└── README.md
 
-### `npm test`
+## Add Your Content
+- Upload your projects with descriptions, links and visuals.
+- Add professional photos and your bio.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Develop the Website
+1. Test your wesite on multiple devices and browsers.
+2. Deploy it using GitHub Pages:
+    npm run build
+    git add .
+    git commit -m "Deploy portfolio"
+    git push origin main
