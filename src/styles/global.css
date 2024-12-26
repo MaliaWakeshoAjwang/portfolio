@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --smoke: #f5f5f5;       
+    --gold: #B8860B;
+    --jet: #333333;
+    --grey: #d9d9d9;
+    --white: #ffffff;
+    --black: #000000;
+    font-size: 16px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--smoke);
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}

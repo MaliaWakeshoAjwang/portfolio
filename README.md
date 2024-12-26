@@ -1,13 +1,13 @@
 # Portfolio
 
 ## Steps
-1. Define Your Goals
-2. Decide the Structure
-3. Choose the Technology Stack
-4. Design the Layout
-5. Develop the Website
-6. Add Your Content
-7. Test and Deploy
+-[x] Define Your Goals
+-[x] Decide the Structure
+-[x] Choose the Technology Stack
+-[ ] Design the Layout
+-[ ] Develop the Website
+-[ ] Add Your Content
+-[ ] Test and Deploy
 
 ## Define Your Goals
 I want this portfolio to showcase programming progects and my full-stack engineering skills. It should highlight projects, tasks, webistes, and jobs that I have done related to software engineering.
@@ -56,34 +56,35 @@ Will do the desigin on Figma and use the prototyping tool to test new featuers a
 
 ## Develop the Website
 ### File Structure
-// TODO: create separate stylings for each page and the different components
-portfolio/
-├── public/
-│   ├── index.html
-├── src/
-│   ├── components/
-│   │   ├── Navbar.js
-│   │   ├── Footer.js
-│   │   └── Header.js
-│   ├── pages/
-│   │   ├── About.js
-│   │   ├── Contact.js
-│   │   ├── Home.js
-│   │   └── Projects.js
-│   ├── styles/
-│   │   └── styles.css
-│   ├── App.js
-│   ├── index.js
-├── package-lock.json
-├── package.json
-└── README.md
+[//]: # ( TODO: create separate stylings for each page and the different components)
+portfolio/<br>
+├── public/<br>
+│   ├── index.html<br>
+├── src/<br>
+│   ├── components/<br>
+│   │   ├── Navbar.js<br>
+│   │   ├── Footer.js<br>
+│   │   └── Header.js<br>
+│   ├── pages/<br>
+│   │   ├── About.js<br>
+│   │   ├── Blog.js<br>
+│   │   ├── Contact.js<br>
+│   │   ├── Home.js<br>
+│   │   └── Projects.js<br>
+│   ├── styles/<br>
+│   │   └── styles.css<br>
+│   ├── App.js<br>
+│   ├── index.js<br>
+├── package-lock.json<br>
+├── package.json<br>
+└── README.md<br>
 
 ## Add Your Content
 - Upload your projects with descriptions, links and visuals.
 - Add professional photos and your bio.
 
 ## Develop the Website
-1. Test your wesite on multiple devices and browsers.
+1. Test your website on multiple devices and browsers.
 2. Deploy it using GitHub Pages:
     npm run build
     git add .
