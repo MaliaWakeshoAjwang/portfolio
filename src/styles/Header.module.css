@@ -69,3 +69,9 @@ nav ul li img {
     width: auto;
     content: url("../assets/icons/active/LinkedIn.png");
 }
+
+.github:hover img{
+    height: 110%;
+    width: auto;
+    content: url("../assets/icons/active/Github.png");
+}

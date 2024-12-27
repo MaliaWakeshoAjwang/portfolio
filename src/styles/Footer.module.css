@@ -70,6 +70,12 @@
     content: url("../assets/icons/active/LinkedIn.png");
 }
 
+.github:hover img{
+    height: 110%;
+    width: auto;
+    content: url("../assets/icons/active/Github.png");
+}
+
 .quicklinks ul{
     list-style: none;
     margin: 0;
@@ -116,10 +122,6 @@
 
 .left{
     text-align: start;
-}
-
-.middle{
-    /* text-align: center; */
 }
 
 .right{

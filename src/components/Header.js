@@ -2,10 +2,11 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import styles from '../styles/Header.module.css'
 import styled from'styled-components';
-import Twitter from '../assets/icons/X.png';
-import YouTube from '../assets/icons/YouTube.png';
+// import Twitter from '../assets/icons/X.png';
+// import YouTube from '../assets/icons/YouTube.png';
 import LinkedIn from '../assets/icons/LinkedIn.png';
 import Instagram from '../assets/icons/Instagram.png';
+import Github from '../assets/icons/Github.png';
 
 const Logo = styled(NavLink)`
     text-decoration: none;
@@ -75,24 +76,29 @@ const Header = () => {
                     <li>
                         <Navlink to="/contact">Contact</Navlink>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="https://twitter.com" target="_blank" rel="noopener nore noreferrer" className={styles.x}>
                             <img src={Twitter} alt='Twitter logo'/>
                         </a>
-                    </li>
+                    </li> */}
                     <li>
-                        <a href="https://instagram.com" target="_blank" rel="noopener nore noreferrer" className={styles.insta}>
+                        <a href="https://www.instagram.com/mazwakes/" target="_blank" rel="noopener nore noreferrer" className={styles.insta}>
                             <img src={Instagram} alt='Instagram logo'/>
                         </a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="https://www.youtube.com" target="_blank" rel="noopener nore noreferrer" className={styles.yt}>
                             <img src={YouTube} alt='YouTube logo'/>
                         </a>
+                    </li> */}
+                    <li>
+                        <a href="https://www.linkedin.com/in/malia-wakesho-ajwang/" target="_blank" rel="noopener nore noreferrer" className={styles.linkedin}>
+                            <img src={LinkedIn} alt='LinkedIn logo'/>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com" target="_blank" rel="noopener nore noreferrer" className={styles.linkedin}>
-                            <img src={LinkedIn} alt='LinkedIn logo'/>
+                        <a href="https://github.com/MaliaWakeshoAjwang" target="_blank" rel="noopener nore noreferrer" className={styles.github}>
+                            <img src={Github} alt='Github logo'/>
                         </a>
                     </li>
                 </ul>
