@@ -1,13 +1,13 @@
 # Portfolio
 
 ## Steps
--[x] Define Your Goals
--[x] Decide the Structure
--[x] Choose the Technology Stack
--[ ] Design the Layout
--[ ] Develop the Website
--[ ] Add Your Content
--[ ] Test and Deploy
+- [x] Define Your Goals
+- [x] Decide the Structure
+- [x] Choose the Technology Stack
+- [ ] Design the Layout
+- [ ] Develop the Website
+- [ ] Add Your Content
+- [ ] Test and Deploy
 
 ## Define Your Goals
 I want this portfolio to showcase programming progects and my full-stack engineering skills. It should highlight projects, tasks, webistes, and jobs that I have done related to software engineering.
