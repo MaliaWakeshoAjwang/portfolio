@@ -1,7 +1,19 @@
 import React from 'react';
 
 const Blog = () => {
-    return <h1>Blog Page</h1>;
+    return(
+        <>
+            <div>
+
+                <div className='landing'>
+                    <h1>Blog</h1>
+                    <p>Latest news and updates from my portfolio.</p>
+                </div>
+
+            </div>
+        </>
+
+    );
 };
 
 export default Blog;

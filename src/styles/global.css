@@ -8,6 +8,8 @@
     --white: #ffffff;
     --black: #000000;
     font-size: 16px;
+
+    --header-height: 2.5rem;
 }
 
 *,
@@ -31,7 +33,31 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Playfair Display', serif;
 }
 
-p {
+p, a{
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
+}
+
+.router{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.landing{
+    height: calc(100vh - var(--header-height));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.landing p {
+    font-size: 1.2rem;
 }

@@ -1,27 +1,21 @@
 .header{
     width: 100%;
-    height: 2.5rem;
+    height: var(--header-height);
     display: flex;
     justify-content: space-between;
     padding: 1rem 0.5rem;
-    border: 1px solid red;
     align-items: center;
 }
 
 .logo a{
     color: var(--gold);
     text-decoration: none;
-    font-family: 'Play';
+    font-family: 'Inter';
 }
 
-.nav{
+nav{
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-nav {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.75rem 0.5rem;
@@ -47,6 +41,31 @@ nav ul li a {
 }
 
 nav ul li img {
+    height: 90%;
+    width: auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.insta:hover img{
     height: 100%;
     width: auto;
+    content: url("../assets/icons/active/Instagram.png");
+}
+
+.x:hover img{
+    height: 110%;
+    width: auto;
+    content: url("../assets/icons/active/X.png");
+}
+
+.yt:hover img{
+    height: 110%;
+    width: auto;
+    content: url("../assets/icons/active/YouTube.png");
+}
+
+.linkedin:hover img{
+    height: 110%;
+    width: auto;
+    content: url("../assets/icons/active/LinkedIn.png");
 }
