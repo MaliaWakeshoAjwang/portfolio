@@ -1,0 +1,154 @@
+.landing{
+    background-image: url("../assets/bg.jpg");
+    background-position: center; /* Center the image horizontally and vertically */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Scale the image to cover the container */
+    overflow: hidden; /* Hide any content overflow (if needed) */
+}
+
+.scrollindicator {
+    position: absolute; /* Adjust based on your layout */
+    bottom: 20px; /* Place near the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: var(--gold);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.scrollindicator p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.goldline {
+    width: 2px;
+    height: 50px;
+    background-color: var(--gold);
+    margin: 0 auto;
+    position: relative;
+    animation: grow-shrink 2s infinite ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes grow-shrink {
+    0% {
+        height: 10px;
+    }
+    50% {
+        height: 50px;
+    }
+    100% {
+        height: 10px;
+    }
+}
+
+.about{
+    padding: 2rem;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.selfie{
+    height: 110%;
+}
+
+.selfie img{
+    height: 100%;
+}
+
+.info{
+    margin-left: 2rem;
+    text-align: left;
+    align-self: center;
+}
+
+.info h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* Container for CTA buttons */
+.ctacontainer {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+    justify-content: center; /* Center buttons horizontally */
+    margin-top: 20px;
+}
+
+/* Container for buttons */
+.ctacontainer {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* General button styles */
+button {
+    all: unset; /* Reset all button default styles */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 50px; /* Oval shape */
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* Black Button */
+.ctablack {
+    background-color: var(--jet); /* Black background */
+    color: var(--white); /* White text */
+    border-color: var(--jet);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.ctablack:hover {
+    background-color: #555; /* Lighter black on hover */
+    color: var(--white);
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* White Button */
+.ctawhite {
+    background-color: var(--white); /* White background */
+    color: var(--jet); /* Black text */
+    border: 2px solid var(--jet); /* Black border */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ctawhite:hover {
+    background-color: var(--smoke); /* Slightly darker white */
+    color: var(--jet);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Link inside the button */
+.link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the button's text color */
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
