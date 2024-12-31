@@ -9,8 +9,9 @@
     --white: #ffffff;
     --black: #000000;
     font-size: 16px;
-
     --header-height: 2.5rem;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 *,

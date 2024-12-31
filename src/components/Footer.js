@@ -79,7 +79,7 @@ const Footer = () => {
                             <li><Link to="/" className={styles.quicklink}>Home</Link></li>
                             <li><Link to="/about" className={styles.quicklink}>About</Link></li>
                             <li><Link to="/projects" className={styles.quicklink}>Projects</Link></li>
-                            <li><Link to="/blog" className={styles.quicklink}>Blog</Link></li>
+                            {/* <li><Link to="/blog" className={styles.quicklink}>Blog</Link></li> */}
                             <li><Link to="/contact" className={styles.quicklink}>Contact</Link></li>
                         </ul>
                     </div>

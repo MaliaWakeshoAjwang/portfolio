@@ -1,15 +1,16 @@
 import React from 'react';
 import styles from '../styles/Project.module.css'; // Import the CSS file
 import holder from '../assets/holder.png'; // Placeholder image
+import portfolio from '../assets/personal portfolio.png'; // Placeholder image
 
 const projectData = [
     {
         id: 1,
-        title: "Project 1",
-        description: "A brief description of Project 1.",
-        image: holder,
-        liveLink: "https://live-project1.com",
-        githubLink: "https://github.com/yourusername/project1",
+        title: "My Personal Portfolio",
+        description: "A responsive portfolio showcasing my skills, projects, and contact information.",
+        image: portfolio,
+        liveLink: "https://maliawakeshoajwang.github.io/portfolio/",
+        githubLink: "https://github.com/MaliaWakeshoAjwang/portfolio",
     },
     {
         id: 2,
