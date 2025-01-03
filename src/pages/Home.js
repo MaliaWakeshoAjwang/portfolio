@@ -2,6 +2,8 @@ import React from 'react';
 import styles from '../styles/Home.module.css';
 import Malia from '../assets/Subject.png';
 import { Link } from 'react-router-dom';
+import { BlackButton, WhiteButton} from "../styles/SharedComponents"; // Adjust the import path
+
 
 const Home = () => {
     return(
@@ -25,12 +27,12 @@ const Home = () => {
                         <h2>About Me</h2>
                         <p>I'm a passionate, dedicated, and creative web developer with a strong foundation in front-end development and a background in cyber-security. I have a keen eye for detail and an unwavering commitment to delivering high-quality, user-friendly experiences. I'm currently seeking opportunities to work on challenging projects and contribute to the growing industry.</p>
                         <div className={styles.ctacontainer}>
-                            <button className={styles.ctablack}>
+                            <BlackButton>
                                 <Link to="/about" className={styles.link}>More About Me</Link>
-                            </button>
-                            <button className={styles.ctawhite}>
-                                <Link to="/projects" className={styles.link}>Latest Project</Link>
-                            </button>
+                            </BlackButton>
+                            <WhiteButton>
+                                <Link to="/projects" className={styles.link}>Latest Projects</Link>
+                            </WhiteButton>
                         </div>
                     </div>
                 </div>

@@ -24,8 +24,6 @@ const Logo = styled(Link)`
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-
-
             <div className={styles.top}>
                 <div>
                     <div>
