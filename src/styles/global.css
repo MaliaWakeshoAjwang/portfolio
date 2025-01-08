@@ -42,7 +42,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--primary-font);
     color: var(--heading-color);
     line-height: 1.2;
-    margin-bottom: 20px;
 }
 
 h1 {
@@ -76,12 +75,11 @@ h6 {
 }
 
 /* Paragraphs */
-p {
+p, li{
     font-family: var(--secondary-font);
     color: var(--text-color);
     font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 20px;
 }
 
 /* Links */
