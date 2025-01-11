@@ -1,22 +1,57 @@
 /* General Section Styling */
-
-.projectsSection{
+.projectsSection {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     min-height: calc(100vh - var(--header-height));
     width: 100%;
-    justify-content: flex-start;
     padding: 2rem;
 }
 
-.header{
+.header {
+    text-align: center;
     padding-top: 5rem;
 }
+
+.header h1 {
+    font-size: 2rem;
+    color: var(--jet);
+}
+
 .header p {
     font-size: 1.2rem;
-    margin-bottom: 40px;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
     color: var(--grey);
+}
+
+/* Tags for Filtering */
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tag {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--jet);
+    background-color: var(--white);
+    color: var(--jet);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background-color: var(--jet);
+    color: var(--white);
+}
+
+.activeTag {
+    background-color: var(--gold);
+    color: var(--white);
 }
 
 /* Projects Grid */
@@ -36,11 +71,46 @@
     overflow: hidden;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .projectCard:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.projectDetails {
+    padding: 20px;
+    text-align: left;
+}
+
+.projectTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--jet);
+}
+
+.projectDescription {
+    font-size: 1rem;
+    color: var(--grey);
+    margin-bottom: 20px;
+}
+
+/* Project Tags */
+.projectTags {
+    /* display: flex; */
+    display: none;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.projectTag {
+    background-color: var(--gold);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
 }
 
 /* Image Container */
@@ -59,25 +129,6 @@
 
 .projectCard:hover .projectImage {
     transform: scale(1.1);
-}
-
-/* Project Details */
-.projectDetails {
-    padding: 20px;
-    text-align: left;
-}
-
-.projectTitle {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: var(--jet);
-}
-
-.projectDescription {
-    font-size: 1rem;
-    color: var(--grey);
-    margin-bottom: 20px;
 }
 
 /* Project Links */
@@ -118,4 +169,118 @@
     background-color: var(--gold);
     color: var(--jet);
     border: 2px solid var(--jet);
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.links {
+    margin-top: 1rem;
+}
+
+.link {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 0.5rem;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh; /* Ensure modal height doesn't exceed the viewport */
+    overflow: hidden; /* Hide overflow for better control */
+}
+
+/* Scrollable Content */
+.modalBody {
+    overflow-y: auto;
+    flex-grow: 1; /* Makes the content take up available space */
+    padding-right: 0.5rem; /* Add padding for better scrolling visibility */
+    margin-bottom: 1rem; /* Space above the footer */
+}
+
+.modalBody p {
+    text-align: start;
+    padding: 0.25rem;
+}
+
+/* Fixed Footer */
+.modalFooter {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0 0; /* Space above the footer */
+    border-top: 1px solid var(--grey); /* Optional: Separate visually */
+    background: var(--white);
+    position: sticky; /* Keeps it visible at the bottom of the modal content */
+    bottom: 0;
+}
+
+/* Close Button */
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: var(--jet);
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    color: var(--gold);
 }
