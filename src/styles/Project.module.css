@@ -193,16 +193,6 @@
     max-width: 500px;
 }
 
-.closeButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
 .links {
     margin-top: 1rem;
 }
@@ -271,8 +261,8 @@
 /* Close Button */
 .closeButton {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0.75rem;
+    right: 0.75rem;
     font-size: 1.5rem;
     font-weight: bold;
     background: none;
