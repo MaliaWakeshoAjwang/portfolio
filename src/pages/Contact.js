@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../styles/Contact.module.css';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -7,6 +8,8 @@ const Contact = () => {
         email: '',
         message: '',
     });
+
+    const [status, setStatus] = useState(''); // For displaying success/error messages
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -18,8 +21,33 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
-        // You can integrate with an API or email service here
+        // Replace with your EmailJS details
+        const serviceId = 'service_portfolio';
+        const templateId = 'template_portfolio';
+        const publicKey = 'VKuj-NWGuQusibmrq';
+
+        emailjs
+            .send(
+                serviceId,
+                templateId,
+                {
+                    from_name: formData.name,
+                    from_email: formData.email,
+                    message: formData.message,
+                },
+                publicKey
+            )
+            .then(
+                (response) => {
+                    console.log('Email sent successfully!', response.status, response.text);
+                    setStatus('Message sent successfully!');
+                    setFormData({ name: '', email: '', message: '' }); // Reset form
+                },
+                (error) => {
+                    console.error('Failed to send email:', error);
+                    setStatus('Failed to send message. Please try again later.');
+                }
+            );
     };
 
     return (
@@ -67,6 +95,7 @@ const Contact = () => {
                         Send
                     </button>
                 </form>
+                {status && <p className={styles.statusMessage}>{status}</p>}
             </div>
         </div>
     );
