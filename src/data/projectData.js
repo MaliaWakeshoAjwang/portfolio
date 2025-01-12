@@ -38,7 +38,7 @@ const projectData = [
         tags: ["React", "JavaScript", "Interactive", "Frontend"],
         image: dogyears,
         liveLink: "/portfolio/project/dog-years",
-        githubLink: "https://github.com/yourusername/project3",
+        githubLink: "https://github.com/MaliaWakeshoAjwang/portfolio/blob/main/src/projectcode/DogYears.js",
     },
 ];
 
