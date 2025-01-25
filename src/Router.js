@@ -6,8 +6,8 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
-import TemperatureConverter from "./pages/projectcode/TemperatureConverter";
-import DogYears from './pages/projectcode/DogYears';
+import TemperatureConverter from "./projectcode/TemperatureConverter";
+import DogYears from './projectcode/DogYears';
 
 const AppRouter = () => {
     return (
