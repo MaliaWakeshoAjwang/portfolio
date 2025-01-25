@@ -19,8 +19,8 @@ const AppRouter = () => {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/resume" element={<Resume />} />
-                <Route path="/project/temperature-converter" element={<TemperatureConverter />} />
-                <Route path="/project/dog-years" element={<DogYears />} />
+                <Route path="/projects/temperature-converter" element={<TemperatureConverter />} />
+                <Route path="/projects/dog-years" element={<DogYears />} />
             </Routes>
         </main>
     );
