@@ -6,8 +6,8 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
-import TemperatureConverter from "./projectcode/TemperatureConverter";
-import DogYears from './projectcode/DogYears';
+import TemperatureConverter from "./pages/projectcode/TemperatureConverter";
+import DogYears from './pages/projectcode/DogYears';
 
 const AppRouter = () => {
     return (
@@ -19,8 +19,8 @@ const AppRouter = () => {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/resume" element={<Resume />} />
-                <Route path="/projects/temperature-converter" element={<TemperatureConverter />} />
-                <Route path="/projects/dog-years" element={<DogYears />} />
+                <Route path="/project/temperature-converter" element={<TemperatureConverter />} />
+                <Route path="/project/dog-years" element={<DogYears />} />
             </Routes>
         </main>
     );
