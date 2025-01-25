@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../styles/Project.module.css";
 import projectData from "../data/projectData"; // Import project dat
+import { Link } from "react-router-dom";
 
 // Projects Component
 const Projects = () => {
@@ -113,14 +114,14 @@ const Projects = () => {
                             >
                                 GitHub
                             </a>
-                            <a
-                                href={selectedProject.liveLink}
+                            <Link
+                                to={selectedProject.liveLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.link}
                             >
                                 Live Demo
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
