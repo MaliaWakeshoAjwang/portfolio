@@ -13,7 +13,7 @@ const projectData = [
         achieved: "The portfolio provides a polished and professional online presence, enabling me to effectively share my expertise with potential employers and collaborators. It highlights my skills in front-end development, responsive design, and interactivity through a dedicated projects section. By incorporating a clear structure and engaging design, the website offers an enjoyable and seamless user experience. Building this portfolio also allowed me to refine my technical skills and gain hands-on experience with deployment and managing live projects.",
         tags: ["React", "Frontend", "Portfolio", "JavaScript"],
         image: portfolio,
-        liveLink: "https://maliawakeshoajwang.github.io/portfolio/",
+        liveLink: "/#/portfolio/",
         githubLink: "https://github.com/MaliaWakeshoAjwang/portfolio",
     },
     {
@@ -25,7 +25,7 @@ const projectData = [
         achieved: "Through this project, I mastered JavaScript basics by gaining a deeper understanding of variables, mathematical calculations, and formatting results. I built an interactive, user-friendly temperature converter that is both functional and easy to use. By leveraging React to handle user inputs and dynamic calculations, I improved my proficiency with modern web development tools. The project also enhanced my problem-solving skills as I broke down the Kelvin conversion challenge into smaller steps and implemented a structured solution. Finally, I showcased the project in my portfolio, demonstrating my ability to tackle real-world coding challenges and present them professionally.",
         tags: ["React", "JavaScript", "Interactive", "Frontend"],
         image: temp,
-        liveLink: "/project/temperature-converter",
+        liveLink: "/#/project/temperature-converter",
         githubLink: "https://github.com/MaliaWakeshoAjwang/projects/blob/main/src/projectcode/TemperatureConverter.js",
     },
     {
@@ -37,7 +37,7 @@ const projectData = [
         achieved: "Through this project, I strengthened my understanding of JavaScript variables, math operators, and dynamic output generation. I successfully created an engaging, interactive tool that converts human years to dog years, showcasing my ability to turn logical calculations into a user-friendly application. This project also improved my problem-solving skills by breaking down the age conversion logic into manageable steps. Additionally, I integrated the project into my portfolio to demonstrate my capability to develop practical solutions and deliver them in a professional format.",
         tags: ["React", "JavaScript", "Interactive", "Frontend"],
         image: dogyears,
-        liveLink: "/project/dog-years",
+        liveLink: "/#/project/dog-years",
         githubLink: "https://github.com/MaliaWakeshoAjwang/portfolio/blob/main/src/projectcode/DogYears.js",
     },
 ];
