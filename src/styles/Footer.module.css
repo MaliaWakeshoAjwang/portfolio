@@ -1,0 +1,129 @@
+.footer {
+    background-color: var(--grey);
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.5rem 0;
+}
+
+.top{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.socials{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.socials ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.socials ul li {
+    color: var(--jet);
+    text-decoration: none;
+    height: 1.5rem;
+}
+
+.socials ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.socials ul li img {
+    height: 90%;
+    width: auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.insta:hover img{
+    height: 110%;
+    width: auto;
+    content: url("../assets/icons/active/Instagram.png");
+}
+
+.x:hover img{
+    height: 110%;
+    width: auto;
+    content: url("../assets/icons/active/X.png");
+}
+
+.yt:hover img{
+    height: 110%;
+    width: auto;
+    content: url("../assets/icons/active/YouTube.png");
+}
+
+.linkedin:hover img{
+    height: 110%;
+    width: auto;
+    content: url("../assets/icons/active/LinkedIn.png");
+}
+
+.github:hover img{
+    height: 110%;
+    width: auto;
+    content: url("../assets/icons/active/Github.png");
+}
+
+.quicklinks ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.quicklinks ul li{
+    color: var(--jet);
+    text-decoration: none;
+    height: 1.5rem;
+}
+
+.quicklink{
+    color: inherit;
+    text-decoration: none;
+}
+
+.quicklink:hover{
+    color: var(--gold);
+}
+
+
+.heading{
+    font-size: 1.25;
+    font-weight: bold;
+
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.documents{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.left{
+    text-align: start;
+}
+
+.right{
+    text-align: end;
+}
